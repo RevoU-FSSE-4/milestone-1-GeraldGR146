@@ -1,0 +1,18 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Rajdhani", sans-serif;
+}
+
+body p {
+  color: #222330;
+}
+
+body a {
+  text-decoration: none;
+  color: #ffffff;
+}

@@ -1,0 +1,48 @@
+.team {
+  background-image: url(../img/KJ-500.png);
+}
+
+.team h1 {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 50px;
+}
+.grid-team {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+  grid-gap: 2em;
+  padding: 2rem;
+  background-color: #222330;
+}
+
+.team-mem {
+  background: white;
+  height: 400px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.staff {
+  color: #ffffff;
+  text-align: center;
+  padding-top: 10px;
+}
+.team-mem h2 {
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.team-mem i {
+  color: black;
+  margin: 20px;
+}
+
+.team-mem img {
+  border-radius: 50%;
+  width: 130px;
+  margin-top: 5px;
+}

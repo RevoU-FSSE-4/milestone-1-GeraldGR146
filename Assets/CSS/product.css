@@ -1,0 +1,73 @@
+.products {
+  background-image: url(../img/kojima-productions.webp);
+  background-size: cover;
+  height: auto;
+  background-position: 60%;
+  background-repeat: no-repeat;
+}
+
+.container {
+  padding: 3rem;
+  display: flex;
+}
+
+.grip-wrapper,
+.products-content {
+  flex-basis: 100%;
+}
+
+.grid-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+  grid-gap: 2em;
+  padding: 2rem;
+}
+
+.grid-box {
+  height: 500px;
+  margin-top: 20px;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px #222330;
+}
+
+.grid-box img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 20px;
+}
+
+.grid-box h1 {
+  font-weight: 500;
+  color: #ffffff;
+  background-color: #222330;
+}
+
+.products-content {
+  padding: 3 rem;
+  text-align: center;
+}
+
+.products-content h1 {
+  font-size: 8vmin;
+  margin-bottom: 30px;
+  color: #ffffff;
+}
+
+.products-content h2 {
+  font-size: 5vmin;
+  margin-bottom: 30px;
+  color: #ffffff;
+}
+
+.products-content p {
+  font-size: 3vmin;
+  margin-bottom: 30px;
+  color: #ffffff;
+  background-color: #222330;
+}
+
+@media screen and (max-width: 800px) {
+}

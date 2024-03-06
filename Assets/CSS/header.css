@@ -1,0 +1,108 @@
+.hero {
+  background-color: white;
+  background-image: url(../img/Header.jpg);
+  background-position: center;
+  -webkit-animation: slidein 10s;
+  animation: slidein 10s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+}
+
+@-webkit-keyframes slidein {
+  from {
+    background-position: top;
+    background-size: 1200px;
+  }
+  to {
+    background-position: -75px 0px;
+    background-size: 2000px;
+  }
+}
+
+@keyframes slidein {
+  from {
+    background-position: top;
+    background-size: 1200px;
+  }
+  to {
+    background-position: -75px 0px;
+    background-size: 2000px;
+  }
+}
+
+.container {
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  padding: 10px 50px;
+}
+
+.navbar ul {
+  flex: 1;
+  text-align: right;
+}
+
+.navbar ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 0 25px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 20px;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+.logo {
+  width: 180px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  padding-top: 5rem;
+}
+
+.headcontent {
+  text-align: center;
+  flex-basis: 50%;
+  padding: 5rem;
+  margin-bottom: 30px;
+}
+
+.headcontent p {
+  margin-bottom: 20px;
+  color: white;
+}
+
+.headcontent h1 {
+  font-size: 7vmin;
+  color: white;
+  font-weight: 600;
+  transition: 0.5s;
+  margin-top: 7rem;
+}
+
+.headcontent h1:hover {
+  -webkit-text-stroke: 2px #ffffff;
+  color: transparent;
+}

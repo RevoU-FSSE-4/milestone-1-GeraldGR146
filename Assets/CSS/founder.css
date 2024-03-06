@@ -1,0 +1,10 @@
+.founder {
+  background-image: url(../img/HK.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.founder p {
+  color: #222330;
+}
