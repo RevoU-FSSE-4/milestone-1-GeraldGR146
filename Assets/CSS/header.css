@@ -19,7 +19,7 @@
   }
   to {
     background-position: -75px 0px;
-    background-size: 2000px;
+    background-size: 1800px;
   }
 }
 
@@ -30,7 +30,7 @@
   }
   to {
     background-position: -75px 0px;
-    background-size: 2000px;
+    background-size: 1800px;
   }
 }
 
@@ -42,13 +42,16 @@
   padding-right: 1rem;
 }
 .navbar {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   display: flex;
   width: 100%;
   align-items: center;
   padding: 10px 50px;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15);
 }
 
 .navbar ul {

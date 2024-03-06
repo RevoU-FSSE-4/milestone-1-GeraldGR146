@@ -39,6 +39,7 @@ footer {
 .footernav ul {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .footernav ul li a {
@@ -62,4 +63,10 @@ footer {
 
 .footerbottom p {
   color: white;
+}
+
+@media screen and (max-width: 550px) {
+  .footernav ul li a {
+    font-size: 0.9em;
+  }
 }
