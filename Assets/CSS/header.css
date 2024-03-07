@@ -198,3 +198,27 @@
     right: 0;
   }
 }
+
+@media (min-width: 1550px) {
+  @-webkit-keyframes slidein {
+    from {
+      background-position: top;
+      background-size: 2000px;
+    }
+    to {
+      background-position: -75px 0px;
+      background-size: 2400px;
+    }
+  }
+
+  @keyframes slidein {
+    from {
+      background-position: top;
+      background-size: 2400px;
+    }
+    to {
+      background-position: -75px 0px;
+      background-size: 2500px;
+    }
+  }
+}
