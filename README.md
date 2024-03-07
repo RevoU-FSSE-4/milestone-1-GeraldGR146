@@ -1,6 +1,6 @@
 # Kojima Production Company Profile Website
 
-## This project is done is order to create a company profile page using HTML and CSS, ensuring responsive design across different screen devices and deploying it to a custom domain.
+## This project is to create a company profile page using HTML and CSS, ensuring responsive design across different screen devices and deploying it to a custom domain.
 
 # Website Content Preview
 
