@@ -9,10 +9,6 @@
   color: #222330;
 }
 
-.hk {
-  display: none;
-}
-
 @media screen and (max-width: 1050px) {
   .founder {
     background-image: url(../img/Hideo.png), url(../img/grey.png);
