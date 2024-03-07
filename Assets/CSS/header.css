@@ -56,7 +56,7 @@
 
 .navbar ul {
   flex: 1;
-  text-align: right;
+  text-align: left;
 }
 
 .navbar ul li {
@@ -75,8 +75,63 @@
   text-decoration: underline;
 }
 
-.logo {
+.logo img {
   width: 180px;
+}
+
+.menu {
+  display: flex;
+}
+
+.menu li {
+  padding-left: 30px;
+}
+
+.menu li a {
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  transition: 0.15s ease-in-out;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.menu li a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  transition: 0.15s ease-in-out;
+}
+
+.menu li a:hover:after {
+  width: 100%;
+}
+
+.open-menu,
+.close-menu {
+  position: absolute;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: #ffffff;
+  display: none;
+}
+
+.open-menu {
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+
+.close-menu {
+  top: 20px;
+  right: 20px;
+}
+
+#check {
+  display: none;
 }
 
 .row {
@@ -108,4 +163,38 @@
 .headcontent h1:hover {
   -webkit-text-stroke: 2px #ffffff;
   color: transparent;
+}
+
+@media (max-width: 950px) {
+  .menu {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(8px);
+    transition: all 0.2s ease-in-out;
+  }
+
+  .menu li {
+    margin-top: 40px;
+  }
+
+  .menu li a {
+    padding: 10px;
+  }
+
+  .open-menu,
+  .close-menu {
+    display: block;
+  }
+
+  #check:checked ~ .menu {
+    right: 0;
+  }
 }
