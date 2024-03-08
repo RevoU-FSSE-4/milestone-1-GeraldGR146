@@ -30,6 +30,12 @@
   text-align: center;
   border-radius: 5px;
   box-shadow: 2px 2px 5px #222330;
+  transition: 1s;
+}
+
+.grid-box:hover {
+  transform: scale(1.2);
+  z-index: 2;
 }
 
 .grid-box img {
